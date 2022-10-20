@@ -27,6 +27,7 @@ $(document).ready(function () {
         // set blog content
         $.get(blogURL, function (result) {
             $("#title").show();
+		console.log("onchange =>", result);
             if (type == "markdown") {
 
                 $("#article").html("");
