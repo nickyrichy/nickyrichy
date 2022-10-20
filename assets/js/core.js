@@ -55,10 +55,5 @@ $(document).ready(function () {
 
         });
     });
-	
-	onchange : function() {
-        console.log("onchange =>", this, this.id, this.settings, this.state);
-        // ....
-    }
 
 })
