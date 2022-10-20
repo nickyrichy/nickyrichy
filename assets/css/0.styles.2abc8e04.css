@@ -348,7 +348,7 @@ div[class~=language-php]:before {
 	border-right:6px solid #ccc
 }
 .theme-default-content:not(.custom) {
-	max-width:1340px;
+	max-width:1240px;
 	margin:0 auto;
 	padding:2rem 2.5rem
 }
