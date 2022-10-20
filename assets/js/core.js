@@ -8,7 +8,6 @@ $(document).ready(function () {
     //user = 'nickyrichy';
     blogListURL = 'https://api.github.com/repos/' + user + '/' + user + '.github.io/contents/notes';
 	
-	console.log('start set Blog list');
 
     //set Blog list
     $.getJSON(blogListURL, function (json) {
@@ -56,5 +55,10 @@ $(document).ready(function () {
 
         });
     });
+	
+	onchange : function() {
+        console.log("onchange =>", this, this.id, this.settings, this.state);
+        // ....
+    }
 
 })
