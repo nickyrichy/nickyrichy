@@ -14,19 +14,16 @@ $(document).ready(function () {
     $.getJSON(blogListURL, function (json) {
 
         var name = json[0].name; // Blog title
-        $("#title").text(name);
-		console.log(name);
+        
 		
         var blogURL = json[0].download_url; //Blog Raw Url
 
         var type = "markdown";
-        // delete '.md'
-        if (name.substr(-3, 3) == ".md") {
-            name = name.substr(0, name.length - 3);
-        } else if (name.substr(-5, 5) == ".html") {
+		if (name.substr(-5, 5) == ".html") {
             name = name.substr(0, name.length - 5);
             type = "html";
         }
+
 
         // set blog content
         $.get(blogURL, function (result) {
@@ -53,7 +50,7 @@ $(document).ready(function () {
                 });
 
             } else {
-                $("#title").hide();
+               
                 $("#article").html(result);
             }
 
