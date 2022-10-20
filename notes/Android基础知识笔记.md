@@ -9,7 +9,7 @@
 [Java相关下载](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 [Android开发相关工具下载](https://developer.android.google.cn/)
 [genymotio个人免费版下载](https://www.genymotion.com/fun-zone/)
-[测试](test.md)
+[测试](https://test.md)
 
 ### JDK安装与环境变量配置
 
